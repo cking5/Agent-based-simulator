@@ -20,4 +20,4 @@ empty_room_200.txt
 0
 1
 0
-C:/Temp/Simulator/
+Simulator/

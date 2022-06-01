@@ -44,9 +44,11 @@ Line 21: Number whether to produce entity schedule output, 1 = yes, anything els
 
 Line 22: Number whether entities have given initial positions, masses, sizes and preferred speeds.  1 = yes.  Anything else = no.
 
-If no, then the file is not read any further.
+Line 23: Filepath of where to store any desired outputs.
 
-If yes, the rest of the file is read:
+If agents do not have initial positions and properties, then the file is not read any further.
+
+If agents have initial positions and properties, then the rest of the file is read:
 On each line for every entity:
 x-coordinates - one per entity
 y-coordinates - one per entity
