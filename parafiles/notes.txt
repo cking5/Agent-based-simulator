@@ -1,0 +1,55 @@
+OutputIREV.java input file, line by line:
+
+Line 1: Index of the starting simulation (usually start at 1 unless a previous process was interrupted somewhere).
+
+Line 2: Index of final simulation, should be greater than or equal to the starting simulation index.  Totla number of simulations = final sim index - start sim index.
+
+Line 3: Number of entities present in simulation.
+
+Line 4: Number of timesteps to run for.
+
+Line 5: Number of equilibration timesteps to run for before recording output.
+
+Line 6: Number of available activities.
+
+Line 7: Name of the room file to be used.
+
+Line 8: Values of busyness parameters of the model, separated by commas.
+
+Line 9: Values of distance parameters of the model, separated by commas.
+
+Line 10: Values of desire parameters of the model, separated by commas.
+
+Line 11: Number whether to include Markov model.  1 = yes.  Anything else = no.
+
+Line 12: Number whether to enforce new next destination constraint.  1 = yes.  Anything else = no.
+
+Line 13: Number whether to vary the masses of the entities.  1 = vary masses.  Anything else = don't vary.
+
+Line 14: Number whether to vary the sizes/radii of the entities.  1 = vary sizes.  Anything else = don't vary.
+
+Line 15: Number whether to vary the preferred speeds of the entities.  1 = vary speeds.  Anything else = don't vary.
+
+Line 16: Number whether to produce entity trajectory output, 1 = yes, anything else = no.
+
+Line 17: Number whether to produce destination occupancy output, 1 = yes, anything else = no.
+
+Line 18: Number whether to produce entity destination output, 1 = yes, anything else = no.
+
+Line 19: Number whether to produce destination distance output, 1 = yes, anything else = no.
+
+Line 20: Number whether to produce destination desirability output, 1 = yes, anything else = no.
+
+Line 21: Number whether to produce entity schedule output, 1 = yes, anything else = no.
+
+Line 22: Number whether entities have given initial positions, masses, sizes and preferred speeds.  1 = yes.  Anything else = no.
+
+If no, then the file is not read any further.
+
+If yes, the rest of the file is read:
+On each line for every entity:
+x-coordinates - one per entity
+y-coordinates - one per entity
+mass of each entity
+size of entity
+preferred speed of each entity
