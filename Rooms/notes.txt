@@ -1,0 +1,11 @@
+The room files have the following format:
+
+Line 1 - name of the environment.  Used to create output file and directory names, among other things.
+
+Line 2 - the dimensions of the square spatial grid used for floor fields of and distances from destinations.
+
+Line 3 - the total number of destinations in the environment.
+
+The next few lines give the grid coordinates of each and every destination in the environment in the form 'x, y', separated by commas, with each destination on its own line.
+
+The remainder of the file provides the floor field and distance values of each cell in the spatial grid for each destination, separated by commas.  Each line represents a row of the grid.  First, the floor field values are given, followed by distance values.  This is done for each destination separately, i.e. first is the floor field values of destination 1, then the distance values from destination one, followed by the floor field values of destination 2, and so on.
